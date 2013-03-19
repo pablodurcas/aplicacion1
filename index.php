@@ -172,7 +172,7 @@ $app_name = idx($app_info, 'name', '');
       </script>
     <![endif]-->
   </head>
-  <body>
+  <body style='background-color:black'>
     <div id="fb-root"></div>
     <script type="text/javascript">
       window.fbAsyncInit = function() {
