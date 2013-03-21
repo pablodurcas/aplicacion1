@@ -17,7 +17,7 @@ $code = $_REQUEST["code"];
     $_SESSION['state'] = md5(uniqid(rand(), TRUE)); //CSRF protection
     $dialog_url = 'https://www.facebook.com/dialog/oauth?' 
       . 'client_id=' . $app_id
-      . '&redirect_uri=' . urlencode($canvas_page_url)
+      . '&redirect_uri=' . urlencode($my_url)
       . '&state=' . $_SESSION['state']
       . '&scope=publish_actions';
 
