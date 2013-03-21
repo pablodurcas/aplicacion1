@@ -30,7 +30,7 @@
     $app_secret);
 
   $uid = $signed_request['user_id'];
-  echo 'Welcome User: ' . $uid;
+  echo 'Welcome User: ' . $uid . 'AAAA' . '\n';
 
   // Get an App Access Token
   $token_url = 'https://graph.facebook.com/oauth/access_token?'
@@ -43,7 +43,7 @@
   parse_str($token_response, $params);
   $app_access_token = $params['access_token'];
 
-echo 'app_access_token: ' . $app_access_token;
+echo 'app_access_token: ' . $app_access_token . '\n';
 
   function parse_signed_request($signed_request, $secret) {
     list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
