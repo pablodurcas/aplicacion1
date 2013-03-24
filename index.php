@@ -46,6 +46,7 @@ $code = $_REQUEST["code"];
 
      $user = json_decode(file_get_contents($graph_url));
      echo("Hello " . $user->name);
+     print_r ($user);
    }
    else {
      echo("The state does not match. You may be a victim of CSRF.");
