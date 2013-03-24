@@ -46,6 +46,7 @@ $code = $_REQUEST["code"];
 
      $user = json_decode(file_get_contents($graph_url));
      echo("Hello " . $user->name);
+     echo("access_token " . $params['access_token']);
      print_r ($user);
    }
    else {
