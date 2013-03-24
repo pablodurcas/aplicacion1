@@ -2,8 +2,8 @@
 
 $token = 'AAAHvfgA7ueMBABqhp67ECryTZAMhebAjsZAGw05i3u2hfqjTBmkQPWstzdhwqehmQ0EZCXLOFiFM23BdqNDnRZBqZBvHmThBTbu5xaBKWyAZDZD';
 $msg = 'Se ha inscrito a la liga de Buscando Padel';
-/*
 $title = 'prueba de titulo';
+/*
 $uri= 'www.buscandopadel.com';
 $desc = 'prueba de descripción';
 */
@@ -13,6 +13,7 @@ $pic = 'http://www.buscandopadel.com/images/avatar/groups/d5736bc8ee930f4c430fc8
 $attachment =  array(
 'access_token' => $token,
 'message' => $msg,
+'name' => $title,
 'picture'=>$pic
 );
 
